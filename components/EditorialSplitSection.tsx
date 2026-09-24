@@ -54,47 +54,50 @@ export function EditorialSplitSection({
       aria-label="Editorial Collections"
       className="w-full bg-black p-0"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0.5 bg-neutral-900">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0.5 bg-black">
         {panels.map((panel) => (
           <Link
             key={panel.id}
             href={panel.href}
             className="group relative block h-[460px] md:h-[500px] lg:h-[580px] w-full overflow-hidden bg-neutral-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            {/* Background Editorial Image */}
+            {/* Background Editorial Image - Uncompressed Full HD / 2K with Smooth Hover Scale */}
             <Image
               src={panel.image}
               alt={panel.alt}
               fill
+              unoptimized
+              priority
+              quality={100}
               sizes="(min-width: 768px) 50vw, 100vw"
               className={`object-cover ${
                 panel.objectPosition ?? "object-center"
-              } transition-transform duration-700 ease-out group-hover:scale-[1.02] motion-reduce:transition-none`}
+              } transition-transform duration-[800ms] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:scale-[1.03] motion-reduce:transition-none`}
             />
 
-            {/* Subtle bottom dark gradient for text legibility */}
+            {/* Premium editorial bottom gradient scrim */}
             <div
               aria-hidden="true"
-              className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-transparent pointer-events-none"
+              className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 via-35% to-transparent pointer-events-none"
             />
 
-            {/* Bottom-left pinned editorial copy */}
+            {/* Bottom-left pinned editorial typography */}
             <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7 lg:p-9 xl:p-10 flex flex-col items-start text-white pointer-events-none">
               <h2
-                className={`${libreBodoni.className} text-[clamp(1.85rem,2.75vw,2.5rem)] font-normal leading-tight tracking-[-0.015em] text-white`}
+                className={`${libreBodoni.className} text-[clamp(2rem,3.1vw,2.75rem)] font-normal leading-[1.05] tracking-[-0.02em] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]`}
               >
                 {panel.title}
               </h2>
 
-              <p className="mt-1.5 text-[11px] sm:text-[12px] font-semibold tracking-[0.18em] uppercase text-white/90">
+              <p className="mt-2 text-[11px] sm:text-[12px] font-semibold tracking-[0.22em] uppercase text-white/90 drop-shadow-[0_1px_6px_rgba(0,0,0,0.4)]">
                 {panel.subtitle}
               </p>
 
-              <div className="mt-4 sm:mt-5 inline-flex items-center gap-2 border-b border-white/60 pb-0.5 text-[12px] sm:text-[13px] font-semibold tracking-[0.14em] uppercase text-white transition-colors group-hover:border-white">
+              <div className="mt-5 inline-flex items-center gap-2.5 border-b border-white/70 pb-1 text-[12px] sm:text-[13px] font-semibold tracking-[0.16em] uppercase text-white drop-shadow-[0_1px_6px_rgba(0,0,0,0.4)] transition-all duration-300 group-hover:border-white group-hover:text-white">
                 <span>{panel.ctaText}</span>
                 <span
                   aria-hidden="true"
-                  className="inline-block transition-transform duration-300 ease-out group-hover:translate-x-1.5"
+                  className="inline-block transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:translate-x-1.5"
                 >
                   →
                 </span>
