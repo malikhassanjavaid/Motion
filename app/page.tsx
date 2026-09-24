@@ -1,4 +1,5 @@
 import { Banner } from "@/components/Banner";
+import { EditorialSplitSection } from "@/components/EditorialSplitSection";
 import { EverydayStandard } from "@/components/EverydayStandard";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
@@ -15,6 +16,7 @@ export default function Home() {
       <EverydayStandard />
       <PoloCollection />
       <SweatshirtFocus />
+      <EditorialSplitSection />
       <Footer />
     </div>
   );
