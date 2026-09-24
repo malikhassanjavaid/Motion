@@ -27,7 +27,7 @@ const defaultPanels: EditorialPanel[] = [
     href: "#polo-collection",
     image: "/images/editorial/polos-kitchen.jpg",
     alt: "Male model wearing a cream knitted polo shirt in a luxury modern kitchen",
-    objectPosition: "object-top sm:object-center",
+    objectPosition: "object-[center_top] md:object-[center_8%]",
   },
   {
     id: "t-shirts",
@@ -37,7 +37,7 @@ const defaultPanels: EditorialPanel[] = [
     href: "#everyday-standard",
     image: "/images/editorial/tshirts-office.jpg",
     alt: "Female model wearing a white premium t-shirt and black tailored trousers in a modern office",
-    objectPosition: "object-top sm:object-center",
+    objectPosition: "object-[center_top] md:object-[center_8%]",
   },
 ];
 
@@ -59,7 +59,7 @@ export function EditorialSplitSection({
           <Link
             key={panel.id}
             href={panel.href}
-            className="group relative block h-[460px] md:h-[500px] lg:h-[580px] w-full overflow-hidden bg-neutral-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+            className="group relative block h-[460px] md:h-[520px] lg:h-[600px] w-full overflow-hidden bg-neutral-950 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
             {/* Background Editorial Image - Uncompressed Full HD / 2K with Smooth Hover Scale */}
             <Image
