@@ -59,19 +59,18 @@ export function EverydayStandard() {
       className="bg-[#0d2f26] py-14 text-white sm:py-18 lg:py-24"
     >
       <header className="px-5 text-center sm:px-8">
-     <p
-  aria-hidden="true"
-  className={`${anton.className} text-[clamp(2.5rem,4.8vw,5.2rem)] leading-none tracking-[-0.035em] text-white`}
->
-  MOTION
-</p>
-
-<h2
-  id="everyday-standard-title"
-  className={`${libreBodoni.className} mt-2 text-[clamp(1.5rem,2.7vw,3.2rem)] font-normal leading-tight tracking-[-0.025em] sm:mt-3`}
->
-  The Everyday Standard
-</h2>
+        <p
+          aria-hidden="true"
+          className={`${anton.className} text-[clamp(2.5rem,4.8vw,5.2rem)] leading-none tracking-[-0.035em] text-white`}
+        >
+          MOTION
+        </p>
+        <h2
+          id="everyday-standard-title"
+          className={`${libreBodoni.className} mt-2 text-[clamp(1.5rem,2.7vw,3.2rem)] font-normal leading-tight tracking-[-0.025em] sm:mt-3`}
+        >
+          The Everyday Standard
+        </h2>
       </header>
 
       <div
