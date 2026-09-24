@@ -1,11 +1,5 @@
 "use client";
 
-import {
-  InstagramLogoIcon,
-  PinterestLogoIcon,
-  TiktokLogoIcon,
-  YoutubeLogoIcon,
-} from "@phosphor-icons/react";
 import { Anton, Libre_Bodoni } from "next/font/google";
 import Link from "next/link";
 import { useState } from "react";
@@ -100,7 +94,14 @@ export function Footer() {
                 aria-label="Instagram"
                 className="transition-opacity hover:opacity-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
-                <InstagramLogoIcon size={19} weight="regular" />
+                <svg
+                  aria-hidden="true"
+                  className="size-5"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
               </Link>
               <Link
                 href="https://tiktok.com"
@@ -109,7 +110,14 @@ export function Footer() {
                 aria-label="TikTok"
                 className="transition-opacity hover:opacity-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
-                <TiktokLogoIcon size={19} weight="regular" />
+                <svg
+                  aria-hidden="true"
+                  className="size-5"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.37a6.34 6.34 0 0 0-1-.08 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.16 8.16 0 0 0 4.91 1.63V6.93a4.84 4.84 0 0 1-1-.24z" />
+                </svg>
               </Link>
               <Link
                 href="https://youtube.com"
@@ -118,7 +126,17 @@ export function Footer() {
                 aria-label="YouTube"
                 className="transition-opacity hover:opacity-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
-                <YoutubeLogoIcon size={19} weight="regular" />
+                <svg
+                  aria-hidden="true"
+                  className="h-4 w-auto"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814z"
+                    fill="currentColor"
+                  />
+                  <polygon points="9.5 15.5 9.5 8.5 15.8 12" fill="white" />
+                </svg>
               </Link>
               <Link
                 href="https://pinterest.com"
@@ -127,7 +145,17 @@ export function Footer() {
                 aria-label="Pinterest"
                 className="transition-opacity hover:opacity-60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
               >
-                <PinterestLogoIcon size={19} weight="regular" />
+                <svg
+                  aria-hidden="true"
+                  className="size-5"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="12" fill="currentColor" />
+                  <path
+                    d="M12.017 4.5C7.873 4.5 4.5 7.873 4.5 12.017c0 3.176 1.977 5.892 4.795 6.993-.067-.591-.127-1.498.026-2.146.139-.583.896-3.805.896-3.805s-.229-.459-.229-1.138c0-1.066.618-1.862 1.389-1.862.655 0 .971.492.971 1.082 0 .659-.42 1.645-.637 2.559-.181.765.385 1.389 1.139 1.389 1.368 0 2.42-1.442 2.42-3.524 0-1.843-1.324-3.131-3.216-3.131-2.35 0-3.73 1.763-3.73 3.585 0 .71.273 1.472.614 1.885.068.082.077.155.057.24-.062.258-.2.816-.228.93-.036.148-.118.179-.273.108-1.021-.475-1.659-1.968-1.659-3.167 0-2.578 1.874-4.945 5.401-4.945 2.835 0 5.04 2.021 5.04 4.722 0 2.817-1.776 5.084-4.241 5.084-.829 0-1.608-.431-1.874-.94l-.51 1.944c-.185.711-.686 1.603-1.022 2.149 1.042.322 2.147.498 3.294.498 4.144 0 7.517-3.373 7.517-7.517 0-4.144-3.373-7.517-7.517-7.517z"
+                    fill="white"
+                  />
+                </svg>
               </Link>
             </div>
           </div>
