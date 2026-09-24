@@ -1,5 +1,6 @@
 import { Banner } from "@/components/Banner";
 import { EverydayStandard } from "@/components/EverydayStandard";
+import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { PoloCollection } from "@/components/PoloCollection";
@@ -14,6 +15,7 @@ export default function Home() {
       <EverydayStandard />
       <PoloCollection />
       <SweatshirtFocus />
+      <Footer />
     </div>
   );
 }
