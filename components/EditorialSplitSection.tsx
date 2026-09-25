@@ -52,7 +52,7 @@ export function EditorialSplitSection({
     <section
       data-section="editorial-split"
       aria-label="Editorial Collections"
-      className="w-full bg-black p-0"
+      className="my-12 w-full bg-black p-0 sm:my-16 lg:my-24"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-0.5 bg-black">
         {panels.map((panel) => (
