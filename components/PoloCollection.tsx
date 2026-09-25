@@ -119,18 +119,18 @@ export function PoloCollection() {
       id="polo-collection"
       data-section="polo-collection"
       aria-labelledby="polo-collection-title"
-      className="mt-12 bg-[#0d2f26] pt-14 text-white sm:mt-16 sm:pt-18 lg:mt-24 lg:pt-24"
+      className="mt-12 bg-white pt-12 text-black sm:mt-16 sm:pt-16 lg:mt-24 lg:pt-20"
     >
-      <header className="px-5 pb-10 text-center sm:px-8 sm:pb-14 lg:pb-16">
+      <header className="px-5 pb-8 text-left sm:px-8 sm:pb-10 lg:px-12 lg:pb-12">
         <p
           aria-hidden="true"
-          className={`${anton.className} text-[clamp(2.5rem,4.8vw,5.2rem)] leading-none tracking-[-0.035em] text-white`}
+          className={`${anton.className} text-[clamp(2.4rem,4.5vw,4.5rem)] leading-none tracking-[-0.035em] text-black`}
         >
           MOTION
         </p>
         <h2
           id="polo-collection-title"
-          className={`${libreBodoni.className} mt-2 text-[clamp(1.5rem,2.7vw,3.2rem)] font-normal leading-tight tracking-[-0.025em] sm:mt-3`}
+          className={`${libreBodoni.className} mt-2 text-[clamp(1.5rem,2.7vw,3rem)] font-normal leading-tight tracking-[-0.025em] text-neutral-800 sm:mt-3`}
         >
           The Polo Collection
         </h2>
@@ -162,7 +162,7 @@ export function PoloCollection() {
           ))}
         </div>
 
-        <div className="flex h-16 items-center justify-end gap-1 border-t border-black/5 px-3 text-black sm:h-[72px] sm:px-6">
+        <div className="flex h-16 items-center justify-end gap-1 border-t border-black/5 px-5 text-black sm:h-[72px] sm:px-8 lg:px-12">
           <button
             type="button"
             aria-label="Previous polos"

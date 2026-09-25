@@ -65,7 +65,7 @@ test("renders the eight-polo rail as a separate section beneath the gallery", as
 
   assert.ok(section, "expected a separate polo collection section");
   assert.match(section[1], /mt-12/);
-  assert.match(section[1], /bg-\[#0d2f26\]/);
+  assert.match(section[1], /bg-white/);
   assert.match(section[2], />MOTION</);
   assert.match(
     section[2],
