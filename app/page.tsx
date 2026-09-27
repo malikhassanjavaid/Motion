@@ -1,6 +1,6 @@
+import { AboutMotionSection } from "@/components/AboutMotionSection";
 import { Banner } from "@/components/Banner";
 import { EditorialSplitSection } from "@/components/EditorialSplitSection";
-import { EverydayStandard } from "@/components/EverydayStandard";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
@@ -13,7 +13,7 @@ export default function Home() {
       <Banner />
       <Navbar />
       <Hero />
-      <EverydayStandard />
+      <AboutMotionSection />
       <PoloCollection />
       <SweatshirtFocus />
       <EditorialSplitSection />
