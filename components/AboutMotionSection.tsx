@@ -50,12 +50,12 @@ export function AboutMotionSection() {
       ref={sectionRef}
       data-section="about-motion"
       aria-labelledby="about-motion-title"
-      className="relative w-full overflow-hidden bg-[#FAF9F5] text-neutral-900"
+      className="my-12 relative w-full overflow-hidden bg-white text-neutral-900 sm:my-16 lg:my-24"
     >
       {/* Background Watermark "MOTION" */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute right-[-4%] top-[-6%] z-0 select-none overflow-hidden leading-none text-[#EFECE6]/80 sm:right-[-2%] sm:top-[-8%]"
+        className="pointer-events-none absolute right-[-4%] top-[-6%] z-0 select-none overflow-hidden leading-none text-[#F1EFEA]/85 sm:right-[-2%] sm:top-[-8%]"
       >
         <span
           className={`${anton.className} block text-[clamp(11rem,22vw,26rem)] font-normal tracking-[-0.04em] uppercase`}
