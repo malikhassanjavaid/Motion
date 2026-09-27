@@ -81,7 +81,7 @@ export function EditorialSplitSection({
             />
 
             {/* Bottom-left pinned editorial typography */}
-            <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7 lg:p-9 xl:p-10 flex flex-col items-start text-white pointer-events-none">
+            <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 md:p-10 lg:p-12 xl:p-14 flex flex-col items-start text-white pointer-events-none">
               <h2
                 className={`${libreBodoni.className} text-[clamp(2rem,3.1vw,2.75rem)] font-normal leading-[1.05] tracking-[-0.02em] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)]`}
               >

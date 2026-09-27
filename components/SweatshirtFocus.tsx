@@ -91,7 +91,7 @@ export function SweatshirtFocus() {
       id="sweatshirt-focus"
       data-section="sweatshirt-focus"
       aria-labelledby="sweatshirt-focus-title"
-      className="mt-12 bg-white text-[#111] sm:mt-16 lg:mt-24 lg:grid lg:grid-cols-[34%_minmax(0,1fr)] lg:items-stretch lg:gap-2 lg:overflow-hidden"
+      className="mt-12 mx-auto w-full max-w-[1440px] bg-white text-[#111] sm:mt-16 lg:mt-24 lg:grid lg:grid-cols-[34%_minmax(0,1fr)] lg:items-stretch lg:gap-2 lg:overflow-hidden"
     >
       <figure className="relative aspect-[4/5] overflow-hidden bg-[#eef2f4] sm:aspect-[5/6] lg:h-full lg:min-h-[44rem] lg:aspect-auto">
         <Image
@@ -104,7 +104,7 @@ export function SweatshirtFocus() {
       </figure>
 
       <div className="min-w-0 bg-white">
-        <header className="px-5 py-8 sm:px-8 sm:py-10 lg:min-h-[10rem] lg:px-6 lg:py-4 xl:px-8">
+        <header className="px-4 py-6 sm:px-6 sm:py-8 md:px-8 lg:min-h-[10rem] lg:px-8 lg:py-6">
           <h2
             id="sweatshirt-focus-title"
             className="text-[clamp(1.75rem,1.7vw,2.15rem)] font-bold leading-[1.05] tracking-[-0.04em]"

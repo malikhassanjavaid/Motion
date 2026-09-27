@@ -3,6 +3,7 @@
 import { Anton, Libre_Bodoni } from "next/font/google";
 import Link from "next/link";
 import { useState } from "react";
+import { CONTAINER_CLASS } from "./Container";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -62,7 +63,7 @@ export function Footer() {
       aria-label="Site footer"
       className="w-full border-t border-neutral-200 bg-white text-black"
     >
-      <div className="mx-auto max-w-[1360px] px-6 py-14 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+      <div className={`${CONTAINER_CLASS} py-12 sm:py-16 lg:py-20`}>
         {/* Main top grid */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_2.2fr] lg:gap-8 xl:gap-12">
           {/* Brand & Editorial Column */}

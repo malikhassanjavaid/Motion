@@ -50,6 +50,8 @@ const categories = [
   },
 ] as const;
 
+import { CONTAINER_CLASS } from "./Container";
+
 export function EverydayStandard() {
   return (
     <section
@@ -58,44 +60,46 @@ export function EverydayStandard() {
       aria-labelledby="everyday-standard-title"
       className="bg-[#0d2f26] py-14 text-white sm:py-18 lg:py-24"
     >
-      <header className="px-5 text-center sm:px-8">
-        <p
-          aria-hidden="true"
-          className={`${anton.className} text-[clamp(2.5rem,4.8vw,5.2rem)] leading-none tracking-[-0.035em] text-white`}
-        >
-          MOTION
-        </p>
-        <h2
-          id="everyday-standard-title"
-          className={`${libreBodoni.className} mt-2 text-[clamp(1.5rem,2.7vw,3.2rem)] font-normal leading-tight tracking-[-0.025em] sm:mt-3`}
-        >
-          The Everyday Standard
-        </h2>
-      </header>
-
-      <div
-        data-category-row="true"
-        aria-label="Shop by category"
-        className="mt-9 flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mt-12 sm:px-8 lg:mt-16 lg:grid lg:grid-cols-6 lg:gap-2 lg:overflow-visible xl:gap-3"
-      >
-        {categories.map((category) => (
-          <figure
-            key={category.label}
-            data-category-card="true"
-            className="group relative aspect-[3/4] w-[72vw] max-w-[21rem] shrink-0 snap-center overflow-hidden bg-black/15 sm:w-[42vw] lg:w-auto lg:max-w-none"
+      <div className={CONTAINER_CLASS}>
+        <header className="text-center">
+          <p
+            aria-hidden="true"
+            className={`${anton.className} text-[clamp(2.5rem,4.8vw,5.2rem)] leading-none tracking-[-0.035em] text-white`}
           >
-            <Image
-              src={category.image}
-              alt={category.alt}
-              fill
-              sizes="(min-width: 1024px) 17vw, (min-width: 640px) 42vw, 72vw"
-              className={`object-cover transition-transform duration-500 ease-out motion-reduce:transition-none lg:group-hover:scale-[1.025] ${category.imagePosition}`}
-            />
-            <figcaption className="absolute inset-x-0 bottom-0 z-10 px-4 pb-4 text-[12px] font-semibold uppercase leading-none tracking-[0.18em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.75)] sm:px-5 sm:pb-5 sm:text-[13px]">
-              {category.label}
-            </figcaption>
-          </figure>
-        ))}
+            MOTION
+          </p>
+          <h2
+            id="everyday-standard-title"
+            className={`${libreBodoni.className} mt-2 text-[clamp(1.5rem,2.7vw,3.2rem)] font-normal leading-tight tracking-[-0.025em] sm:mt-3`}
+          >
+            The Everyday Standard
+          </h2>
+        </header>
+
+        <div
+          data-category-row="true"
+          aria-label="Shop by category"
+          className="mt-8 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:mt-10 sm:gap-4 lg:mt-14 lg:grid lg:grid-cols-6 lg:gap-3 xl:gap-4 lg:overflow-visible"
+        >
+          {categories.map((category) => (
+            <figure
+              key={category.label}
+              data-category-card="true"
+              className="group relative aspect-[3/4] w-[70vw] max-w-[20rem] shrink-0 snap-center overflow-hidden bg-black/15 sm:w-[40vw] lg:w-auto lg:max-w-none"
+            >
+              <Image
+                src={category.image}
+                alt={category.alt}
+                fill
+                sizes="(min-width: 1024px) 17vw, (min-width: 640px) 40vw, 70vw"
+                className={`object-cover transition-transform duration-500 ease-out motion-reduce:transition-none lg:group-hover:scale-[1.03] ${category.imagePosition}`}
+              />
+              <figcaption className="absolute inset-x-0 bottom-0 z-10 px-3.5 pb-3.5 text-[11px] font-semibold uppercase leading-none tracking-[0.16em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.75)] sm:px-4 sm:pb-4 sm:text-[12px]">
+                {category.label}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -133,41 +133,45 @@ export function Hero() {
               />
             </picture>
 
-            <div
-              className={`absolute inset-x-6 top-[7%] z-10 sm:inset-x-auto sm:left-[9.9%] sm:top-[25%] sm:w-[36rem] ${
-                isLight
-                  ? "text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.42)]"
-                  : "text-[#142a43]"
-              }`}
-            >
-              <p className="mb-5 text-[11px] font-semibold uppercase leading-none tracking-[0.23em] sm:mb-7 sm:text-[15px] lg:text-[17px]">
-                {slide.eyebrow}
-              </p>
-              <h1
-                id={`hero-title-${index + 1}`}
-                className={`${libreBodoni.className} text-[clamp(3.2rem,13vw,4.8rem)] font-normal leading-[0.9] tracking-[-0.035em] sm:text-[clamp(4.6rem,6vw,6.6rem)]`}
-              >
-                {slide.headingLines.map((line) => (
-                  <span key={line} className="block">
-                    {line}
-                  </span>
-                ))}
-              </h1>
-              <Link
-                href="#collection"
-                data-hero-cta="true"
-                aria-label={slide.ctaLabel}
-                tabIndex={isActive ? 0 : -1}
-                className="group mt-8 inline-flex items-center gap-2.5 border-b border-current pb-2 text-[11px] font-semibold uppercase leading-none tracking-[0.2em] transition-opacity hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current sm:mt-12 sm:text-[15px]"
-              >
-                <span>{slide.cta}</span>
-                <ArrowRightIcon
-                  aria-hidden="true"
-                  size={20}
-                  weight="regular"
-                  className="transition-transform group-hover:translate-x-1 motion-reduce:transition-none"
-                />
-              </Link>
+            <div className="pointer-events-none absolute inset-0 z-10 flex items-center">
+              <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+                <div
+                  className={`pointer-events-auto max-w-[36rem] pt-8 sm:pt-0 ${
+                    isLight
+                      ? "text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.42)]"
+                      : "text-[#142a43]"
+                  }`}
+                >
+                  <p className="mb-4 text-[11px] font-semibold uppercase leading-none tracking-[0.22em] sm:mb-6 sm:text-[14px] lg:text-[15px]">
+                    {slide.eyebrow}
+                  </p>
+                  <h1
+                    id={`hero-title-${index + 1}`}
+                    className={`${libreBodoni.className} text-[clamp(2.75rem,8vw,5.5rem)] font-normal leading-[0.92] tracking-[-0.035em]`}
+                  >
+                    {slide.headingLines.map((line) => (
+                      <span key={line} className="block">
+                        {line}
+                      </span>
+                    ))}
+                  </h1>
+                  <Link
+                    href="#collection"
+                    data-hero-cta="true"
+                    aria-label={slide.ctaLabel}
+                    tabIndex={isActive ? 0 : -1}
+                    className="group mt-7 inline-flex items-center gap-2.5 border-b border-current pb-1.5 text-[11px] font-semibold uppercase leading-none tracking-[0.2em] transition-opacity hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-current sm:mt-10 sm:text-[14px]"
+                  >
+                    <span>{slide.cta}</span>
+                    <ArrowRightIcon
+                      aria-hidden="true"
+                      size={18}
+                      weight="regular"
+                      className="transition-transform group-hover:translate-x-1 motion-reduce:transition-none"
+                    />
+                  </Link>
+                </div>
+              </div>
             </div>
           </section>
         );

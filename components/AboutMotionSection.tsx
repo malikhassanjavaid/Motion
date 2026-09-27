@@ -11,6 +11,7 @@ import { Anton, Libre_Bodoni } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import { CONTAINER_CLASS } from "./Container";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -65,7 +66,7 @@ export function AboutMotionSection() {
       </div>
 
       {/* Main Content Area */}
-      <div className="relative z-10 mx-auto max-w-[1440px] px-6 pt-12 sm:px-10 sm:pt-14 lg:px-14 lg:pt-16">
+      <div className={`relative z-10 ${CONTAINER_CLASS} pt-10 sm:pt-12 lg:pt-14`}>
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-0 lg:items-end">
           {/* Left Column: Heading, Story & CTAs */}
           <div
@@ -246,7 +247,7 @@ export function AboutMotionSection() {
 
       {/* Bottom Horizontal Benefits Strip */}
       <div className="relative z-10 mt-6 border-t border-black/10 bg-inherit sm:mt-8 lg:mt-0">
-        <div className="mx-auto max-w-[1440px] px-6 py-6 sm:px-10 sm:py-7 lg:px-14">
+        <div className={`${CONTAINER_CLASS} py-5 sm:py-6 lg:py-7`}>
           <div className="grid grid-cols-1 divide-y divide-black/10 md:grid-cols-3 md:divide-y-0 md:divide-x">
             {/* Benefit 1 */}
             <div className="flex items-center gap-4 py-3.5 md:py-0 md:pr-6">
