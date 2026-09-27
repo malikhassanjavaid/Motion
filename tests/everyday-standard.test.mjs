@@ -14,7 +14,7 @@ test("keeps the original Everyday Standard gallery", async () => {
   );
 
   assert.ok(section, "expected the Everyday Standard section below the hero");
-  assert.match(section[1], /bg-\[#0d2f26\]/);
+  assert.match(section[1], /bg-white/);
   assert.match(section[2], />MOTION</);
   assert.match(
     section[2],
